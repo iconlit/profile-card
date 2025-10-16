@@ -147,7 +147,7 @@ ul {
     justify-content: center;
   }
 
-  [data-testid="test-user-hobbies"] li {
+  .section li {
     text-align: center;
   }
 }

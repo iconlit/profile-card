@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="card">
+      <div>
+        <figure class="">
+          <img
+            id="profile-pic"
+            src="./profile-pic.png"
+            alt="Profile picture"
+            data-testid="test-user-picture"
+          />
+        </figure>
+      </div>
+
+      <div>
+        <header>
+          <h2 data-testid="test-name" id="header"></h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          I'm a Frontend Developer who loves turning ideas into clean,
+          responsive, and interactive web interfaces. I work confidently with
+          HTML, CSS, and JavaScript to build smooth user experiences that look
+          great on any screen. I enjoy writing maintainable code, optimizing
+          performance, and bringing modern UI designs to life with precision.
+          Whether it's creating reusable components, improving accessibility, or
+          fine-tuning animations, I aim to make the web a little more intuitive
+          one project at a time.
+        </p>
+
+        <p data-testid="test-user-time"></p>
+
+        <nav data-testid="test-user-social-links">
+          <ul class="social-icons">
+            <li>
+              <a
+                href="https://github.com/iconlit"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://twitter.com/David02885501"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+                aria-label="Twitter"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://linkedin.com/in/akpaesu-david-402b8738a"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="interest">
+          <section>
+            <h3>Hobbies</h3>
+            <ul class="section" data-testid="test-user-hobbies">
+              <li class="Hobbies-list">Coding</li>
+              <li>Reading Tech Blogs</li>
+              <li>Exploring new JavaScript tricks</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Dislikes</h3>
+            <ul class="section" data-testid="test-user-dislikes">
+              <li>Slow Wi-Fi</li>
+              <li>Messy code that refuses to work</li>
+              <li>Unresponsive layouts on mobile</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </article>
+
+    <script src="profile.js"></script>
+  </body>
+</html>

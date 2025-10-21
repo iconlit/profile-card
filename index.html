@@ -102,6 +102,121 @@
       </div>
     </article>
 
+    <main data-testid="test-contact-page">
+      <h1>Contact Us</h1>
+      <form id="contact-form" aria-label="Contact Form">
+        <div>
+          <label for="name">Full Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            data-testid="test-contact-name"
+            required
+          />
+          <p
+            id="error-name"
+            data-testid="test-contact-error-name"
+            aria-live="polite"
+          ></p>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            data-testid="test-contact-email"
+            required
+          />
+          <p
+            id="error-email"
+            data-testid="test-contact-error-email"
+            aria-live="polite"
+          ></p>
+        </div>
+
+        <div>
+          <label for="subject">Subject</label>
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            data-testid="test-contact-subject"
+            required
+          />
+          <p
+            id="error-subject"
+            data-testid="test-contact-error-subject"
+            aria-live="polite"
+          ></p>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            data-testid="test-contact-message"
+            required
+          ></textarea>
+          <p
+            id="error-message"
+            data-testid="test-contact-error-message"
+            aria-live="polite"
+          ></p>
+        </div>
+
+        <button type="submit" data-testid="test-contact-submit">
+          Send Message
+        </button>
+      </form>
+
+      <p data-testid="test-contact-success" hidden>
+        ✅ Your message has been sent successfully!
+      </p>
+    </main>
+
+    <main data-testid="test-about-page">
+      <h1>About Me</h1>
+
+      <section data-testid="test-about-bio">
+        <h2>Bio</h2>
+        <p>
+          I’m a passionate frontend developer with a love for clean code and
+          creative design...
+        </p>
+      </section>
+
+      <section data-testid="test-about-goals">
+        <h2>Goals in This Program</h2>
+        <ul>
+          <li>Master responsive web design</li>
+          <li>Build accessible web apps</li>
+          <li>Learn advanced React concepts</li>
+        </ul>
+      </section>
+
+      <section data-testid="test-about-confidence">
+        <h2>Areas of Low Confidence</h2>
+        <p>
+          I sometimes struggle with debugging complex react logic, but I’m
+          improving through practice.
+        </p>
+      </section>
+
+      <section data-testid="test-about-future-note">
+        <h2>Note to Future Self</h2>
+        <p>Keep learning. Stay consistent.</p>
+      </section>
+
+      <section data-testid="test-about-extra">
+        <h2>Extra Thoughts</h2>
+        <p>GROW</p>
+      </section>
+    </main>
+
     <script src="profile.js"></script>
   </body>
 </html>
